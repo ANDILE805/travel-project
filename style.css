@@ -120,9 +120,13 @@ section {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 section.secondary {
   background: #f8f8f8;
 }
@@ -141,6 +145,9 @@ section.secondary {
   margin: 30px 0;
 }
 
+.card-hearder.grid {
+  grid-gap: 0;
+}
 .card-body {
   padding: 0 30px 30px;
 }
@@ -230,5 +237,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-hearder img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
